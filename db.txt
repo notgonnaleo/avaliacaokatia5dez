@@ -1,0 +1,20 @@
+CREATE TABLE fornecedor(
+id_fornecedor int primary key auto_increment,
+cnpj nvarchar(240),
+razao_social nvarchar(240),
+endereco nvarchar(240), 
+telefone nvarchar(240),
+nome_antasia nvarchar(240),
+ins_est nvarchar(240)
+)
+
+CREATE TABLE produtos(
+id_produto int primary key auto_increment,
+cod_produto nvarchar(240),
+desc_produto nvarchar(240),
+qtde decimal,
+dt_valid DateTime
+preco decimal,
+tipo nvarchar(240),
+medida decimal
+)
